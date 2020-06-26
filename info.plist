@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.tucomel.video-downloader-alfred</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>12E7915C-C435-4191-983F-00949256722A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28422647-406C-41A0-9213-F8DCF6DAA304</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>24F9353B-47E7-4C13-897A-C2BDE205E29D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E7CA8965-C7D6-412D-AE3D-172DD7A27ECF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>28422647-406C-41A0-9213-F8DCF6DAA304</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E4936EF0-B129-4E64-9892-FB0A03364BB6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2D29886C-4E07-412B-B344-FA2355872056</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E5A4E5B7-73A3-4F22-B470-342A340D2C37</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>57078066-0564-478C-966A-9B981EE7800E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CB30E87E-4DE3-4FC3-AC95-C598FA8989E8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF646B06-4EF2-45C9-8D49-8F4FB47E09B3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5B439D56-8EA4-4110-9977-01B4EB4D0DDE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A5D353F-5761-4528-9C3A-748A5951D3C4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7DDA3FBA-3FC8-4A52-B823-828B6583D78E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7DDA3FBA-3FC8-4A52-B823-828B6583D78E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E173526C-76A5-49E2-91E7-D037370C204D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A73B2F73-8230-4689-A4B2-8448CA341704</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0EE74F6E-141E-480F-9607-330FA62FA721</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B3D9B3B3-67F8-4378-A055-B06E37B83971</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CB30E87E-4DE3-4FC3-AC95-C598FA8989E8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF646B06-4EF2-45C9-8D49-8F4FB47E09B3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B538B435-B651-419B-8752-8F9B5D3D1DB4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>24F9353B-47E7-4C13-897A-C2BDE205E29D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BF646B06-4EF2-45C9-8D49-8F4FB47E09B3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C677C0FC-8D57-47C9-A418-74D09F8D2453</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6570E17A-DB88-48D8-B3F2-7880B3037772</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C677C0FC-8D57-47C9-A418-74D09F8D2453</key>
+		<array/>
+		<key>D55D407A-D6DC-4FBE-9B4A-278344FE6B96</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3B7A60B0-65BB-4928-9F46-17CB24155CCF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A73B2F73-8230-4689-A4B2-8448CA341704</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E5A4E5B7-73A3-4F22-B470-342A340D2C37</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B538B435-B651-419B-8752-8F9B5D3D1DB4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E7CA8965-C7D6-412D-AE3D-172DD7A27ECF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B3D9B3B3-67F8-4378-A055-B06E37B83971</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Extract audio from video (delete video after)</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>57078066-0564-478C-966A-9B981EE7800E</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Download and auto-play video</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF646B06-4EF2-45C9-8D49-8F4FB47E09B3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E5987C95-B3AC-4962-82D0-7DCDF7810FE1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Arthur Melo</string>
+	<key>description</key>
+	<string>Download videos from YouTube, Vimeo, DailyMotion and more...</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Video Downloader Alfred</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vd-help</string>
+				<key>subtext</key>
+				<string>Information on using the Video Downloader workflow for Alfred.</string>
+				<key>text</key>
+				<string>Video Downloader Help</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>12E7915C-C435-4191-983F-00949256722A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>echo "$(&lt;"HELP.txt")"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>28422647-406C-41A0-9213-F8DCF6DAA304</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>largetypetext</key>
+				<string></string>
+				<key>textcolor</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>E4936EF0-B129-4E64-9892-FB0A03364BB6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vd-update</string>
+				<key>subtext</key>
+				<string>Check for Video Downloader updates...</string>
+				<key>text</key>
+				<string>Update Video Downloader</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D55D407A-D6DC-4FBE-9B4A-278344FE6B96</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Checking for updates...</string>
+				<key>title</key>
+				<string>Video Downloader Update</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>3B7A60B0-65BB-4928-9F46-17CB24155CCF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Video Downloader Update</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>0EE74F6E-141E-480F-9607-330FA62FA721</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>sh vd-update.sh</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A73B2F73-8230-4689-A4B2-8448CA341704</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>audio</key>
+					<string>-audio</string>
+					<key>notification</key>
+					<string>Extracting audio from : {query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B3D9B3B3-67F8-4378-A055-B06E37B83971</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:notification}</string>
+				<key>title</key>
+				<string>Preparing</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>CB30E87E-4DE3-4FC3-AC95-C598FA8989E8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<true/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Download Complete</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C677C0FC-8D57-47C9-A418-74D09F8D2453</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>notification</key>
+					<string>Waiting video to autoplay : {query}</string>
+					<key>play</key>
+					<string>-play</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>57078066-0564-478C-966A-9B981EE7800E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>if [ -z "$ext" ]; then
+ext=-1
+fi
+if [ -z "$size" ]; then
+size=-1
+fi
+if [ -z "$play" ]; then
+play=-1
+fi
+if [ -z "$audio" ]; then
+audio=-1
+fi
+#echo $"parameters : ("{query}" $ext $size $play $audio)"
+sh vd.sh "{query}" $ext $size $play $audio</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BF646B06-4EF2-45C9-8D49-8F4FB47E09B3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"imagefile":"c88eafeb28ba5d8e2a25a9bed3ca6837df3f7343.png","title":"480p","arg":"480","subtitle":"Compress video to 480p"},{"imagefile":"4a88b4f901461be82ffcf5fa0838ac9f457d8c29.png","title":"720P","arg":"720","subtitle":"Compress video to 720p"}]</string>
+				<key>keyword</key>
+				<string>vd</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Select one mode</string>
+				<key>title</key>
+				<string>VideoDownloader</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>2D29886C-4E07-412B-B344-FA2355872056</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"imagefile":"d90c9b9e8ff9ff4b7150e64f38e02cb56b5a9a8b.png","title":"Skip","subtitle":"(use source extension)"},{"title":"Mp4","arg":"mp4","subtitle":"Convert to Mp4"}]</string>
+				<key>keyword</key>
+				<string>vd</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Select one extension</string>
+				<key>title</key>
+				<string>Video extension</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>B538B435-B651-419B-8752-8F9B5D3D1DB4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>vd</string>
+				<key>subtext</key>
+				<string>Hold CMD (⌘) to extract audio, Hold OPT (⌥) to auto-play.</string>
+				<key>text</key>
+				<string>URL : {var:ext} {var:size} {query}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E7CA8965-C7D6-412D-AE3D-172DD7A27ECF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>size</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E5A4E5B7-73A3-4F22-B470-342A340D2C37</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>ext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>24F9353B-47E7-4C13-897A-C2BDE205E29D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>6570E17A-DB88-48D8-B3F2-7880B3037772</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Downloading...</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E5987C95-B3AC-4962-82D0-7DCDF7810FE1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>vd-info</string>
+				<key>subtext</key>
+				<string>Retrieve detailed information about the video...</string>
+				<key>text</key>
+				<string>Get Video Information...</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5B439D56-8EA4-4110-9977-01B4EB4D0DDE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Retrieving video information from {query}</string>
+				<key>title</key>
+				<string>Video Info</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>0A5D353F-5761-4528-9C3A-748A5951D3C4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>largetypetext</key>
+				<string></string>
+				<key>textcolor</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>E173526C-76A5-49E2-91E7-D037370C204D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>sh vd-info.sh "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7DDA3FBA-3FC8-4A52-B823-828B6583D78E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Video Downloader Alfred (workflow)
+
+Video Downloader Alfred is an Alfred workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion, Twitch and more... It uses youtube-dl as the core component.
+
+Created by Onur Yildirim (onur@cutepilot.com) and updated by Arthur Melo (aomelo@live.com)
+youtube-dl (by Ricardo Garcia Gonzalez, rg3.github.io)
+
+Requirements:
+Python version 2.6, 2.7, or 3.3+
+FFmpeg (optional, required for extract-audio feature and compress new sizes)
+
+Supported sites:
+    • YouTube
+    • Vimeo
+    • Dailymotion
+    • Twitch
+    • MetaCafe
+    • Google Video
+    • MTV
+    • Soundcloud
+    • Photobucket Videos
+    • DepositFiles
+    • blip.tv
+    • myvideo.de
+    • Google Plus
+    • The Daily Show / Colbert Nation
+    • The Escapist
+    • CollegeHumor
+    • arte.tv
+    • xvideos
+    • infoq
+    • mixcloud
+    • Stanford Open Content
+    • Youku
+    • XNXX
+    • more...
+
+For extract-audio feature, you should install FFmpeg yourself manually (because of licensing issues) and add ffmpeg to your $path.
+
+One way to install FFmpeg is;
+
+1. Install XCode
+2. Install Command Line Tools for Xcode
+3. Install MacPorts (from www.macports.org)
+4. Install FFmpeg by running the command below in
+
+	$ sudo port install ffmpeg
+	$ brew install ffmpeg
+
+You can append these options to enable support for various codecs and FFmpeg features:
+
++gpl +postproc +lame +theora +libogg +vorbis +xvid +x264 +a52 +faac +faad +dts +nonfree
+
+FFmpeg is a trademark of Fabrice Bellard and it is licensed under LGPL version 2.1
+http://www.ffmpeg.org/legal.html</string>
+	<key>uidata</key>
+	<dict>
+		<key>0A5D353F-5761-4528-9C3A-748A5951D3C4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1025</integer>
+			<key>ypos</key>
+			<integer>870</integer>
+		</dict>
+		<key>0EE74F6E-141E-480F-9607-330FA62FA721</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1025</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>12E7915C-C435-4191-983F-00949256722A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>625</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>24F9353B-47E7-4C13-897A-C2BDE205E29D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>435</integer>
+			<key>ypos</key>
+			<integer>590</integer>
+		</dict>
+		<key>28422647-406C-41A0-9213-F8DCF6DAA304</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>2D29886C-4E07-412B-B344-FA2355872056</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
+		<key>3B7A60B0-65BB-4928-9F46-17CB24155CCF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1025</integer>
+			<key>ypos</key>
+			<integer>130</integer>
+		</dict>
+		<key>57078066-0564-478C-966A-9B981EE7800E</key>
+		<dict>
+			<key>note</key>
+			<string>Download and auto-play video</string>
+			<key>xpos</key>
+			<integer>740</integer>
+			<key>ypos</key>
+			<integer>515</integer>
+		</dict>
+		<key>5B439D56-8EA4-4110-9977-01B4EB4D0DDE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>625</integer>
+			<key>ypos</key>
+			<integer>870</integer>
+		</dict>
+		<key>6570E17A-DB88-48D8-B3F2-7880B3037772</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1050</integer>
+			<key>ypos</key>
+			<integer>610</integer>
+		</dict>
+		<key>7DDA3FBA-3FC8-4A52-B823-828B6583D78E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>990</integer>
+		</dict>
+		<key>A73B2F73-8230-4689-A4B2-8448CA341704</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>B3D9B3B3-67F8-4378-A055-B06E37B83971</key>
+		<dict>
+			<key>note</key>
+			<string>Extract audio from video (delete video after)</string>
+			<key>xpos</key>
+			<integer>740</integer>
+			<key>ypos</key>
+			<integer>400</integer>
+		</dict>
+		<key>B538B435-B651-419B-8752-8F9B5D3D1DB4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>285</integer>
+			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
+		<key>BF646B06-4EF2-45C9-8D49-8F4FB47E09B3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>855</integer>
+			<key>ypos</key>
+			<integer>555</integer>
+		</dict>
+		<key>C677C0FC-8D57-47C9-A418-74D09F8D2453</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1050</integer>
+			<key>ypos</key>
+			<integer>495</integer>
+		</dict>
+		<key>CB30E87E-4DE3-4FC3-AC95-C598FA8989E8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>855</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
+		<key>D55D407A-D6DC-4FBE-9B4A-278344FE6B96</key>
+		<dict>
+			<key>xpos</key>
+			<integer>625</integer>
+			<key>ypos</key>
+			<integer>130</integer>
+		</dict>
+		<key>E173526C-76A5-49E2-91E7-D037370C204D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1025</integer>
+			<key>ypos</key>
+			<integer>990</integer>
+		</dict>
+		<key>E4936EF0-B129-4E64-9892-FB0A03364BB6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1025</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>E5987C95-B3AC-4962-82D0-7DCDF7810FE1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>855</integer>
+			<key>ypos</key>
+			<integer>695</integer>
+		</dict>
+		<key>E5A4E5B7-73A3-4F22-B470-342A340D2C37</key>
+		<dict>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>590</integer>
+		</dict>
+		<key>E7CA8965-C7D6-412D-AE3D-172DD7A27ECF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>github.com/tucomel</string>
+</dict>
+</plist>
