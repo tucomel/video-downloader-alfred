@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.tucomel.video-downloader-alfred</string>
+	<string>com.tucomel.videodownloaderalfred</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -132,6 +132,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A7E827A4-C0E8-4FA1-AE11-51807F25A2A1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6570E17A-DB88-48D8-B3F2-7880B3037772</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B3D9B3B3-67F8-4378-A055-B06E37B83971</key>
 		<array>
 			<dict>
@@ -182,7 +195,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>6570E17A-DB88-48D8-B3F2-7880B3037772</string>
+				<string>A7E827A4-C0E8-4FA1-AE11-51807F25A2A1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -429,7 +442,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -687,6 +700,19 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>A7E827A4-C0E8-4FA1-AE11-51807F25A2A1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -786,7 +812,7 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -878,7 +904,7 @@ http://www.ffmpeg.org/legal.html</string>
 		<key>24F9353B-47E7-4C13-897A-C2BDE205E29D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>430</integer>
 			<key>ypos</key>
 			<integer>590</integer>
 		</dict>
@@ -908,7 +934,7 @@ http://www.ffmpeg.org/legal.html</string>
 			<key>note</key>
 			<string>Download and auto-play video</string>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>715</integer>
 			<key>ypos</key>
 			<integer>515</integer>
 		</dict>
@@ -922,9 +948,9 @@ http://www.ffmpeg.org/legal.html</string>
 		<key>6570E17A-DB88-48D8-B3F2-7880B3037772</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1050</integer>
+			<integer>1110</integer>
 			<key>ypos</key>
-			<integer>610</integer>
+			<integer>645</integer>
 		</dict>
 		<key>7DDA3FBA-3FC8-4A52-B823-828B6583D78E</key>
 		<dict>
@@ -940,12 +966,19 @@ http://www.ffmpeg.org/legal.html</string>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
+		<key>A7E827A4-C0E8-4FA1-AE11-51807F25A2A1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1025</integer>
+			<key>ypos</key>
+			<integer>675</integer>
+		</dict>
 		<key>B3D9B3B3-67F8-4378-A055-B06E37B83971</key>
 		<dict>
 			<key>note</key>
 			<string>Extract audio from video (delete video after)</string>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>715</integer>
 			<key>ypos</key>
 			<integer>400</integer>
 		</dict>
@@ -961,14 +994,14 @@ http://www.ffmpeg.org/legal.html</string>
 			<key>xpos</key>
 			<integer>855</integer>
 			<key>ypos</key>
-			<integer>555</integer>
+			<integer>560</integer>
 		</dict>
 		<key>C677C0FC-8D57-47C9-A418-74D09F8D2453</key>
 		<dict>
 			<key>xpos</key>
 			<integer>1050</integer>
 			<key>ypos</key>
-			<integer>495</integer>
+			<integer>500</integer>
 		</dict>
 		<key>CB30E87E-4DE3-4FC3-AC95-C598FA8989E8</key>
 		<dict>

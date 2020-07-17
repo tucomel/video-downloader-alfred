@@ -24,7 +24,7 @@ source "$CURRENT_DIR"/workflowHandler.sh
 
 yt="$CURRENT_DIR/bin/youtube-dl"
 download_dir="~"
-output_format="$download_dir/%(title)s.%(ext)s"
+output_format=$download_dir/"%(title)s.%(ext)s"
 ffmpeg_installed=$(program_exists "ffmpeg")
 #ffmpeg_installed=true
 video_url="$1" # "{query}"
@@ -63,21 +63,23 @@ else
         else
         video_size=""
     fi
-    options="$options -f "bestvideo"$video_size""$video_format"+bestaudio"$audio_format"/best"$video_size""$video_format"" "
+    options="$options -f "bestvideo"$video_size""$video_format"+bestaudio"$audio_format"/best"$video_size""$video_format"
 fi
 
-#echo "$yt" $options "$video_url"
-yt_output=$("$yt" $options "$video_url" 2>&1)
+#echo $"($yt $options "$video_url")"
+yt_output="$($yt "$video_url" $options 2>&1)"
 download_result=$?
 
 if [ $download_result -eq 0 ]; then
     filepath="$("$yt" $options --get-filename "$video_url")"
-        if ! [ -f "$filepath" ]; then
-            filepath="$(remove_ext "$filepath").mkv";
-        fi
-    if $extract_audio && $ffmpeg_installed;
-     then filepath="$(remove_ext "$filepath").$audio_format";
-fi
+    if ! [ -f "$filepath" ]; then
+        filepath="$(remove_ext "$filepath").mkv";
+    fi
+    if [[ "$extract_audio" == true && "$ffmpeg_installed" == true ]]; then
+        #filepath="$(remove_ext "$filepath").$audio_format";
+        filepath="$(remove_ext "$filepath")."$audio_format"";
+        #echo $filepath
+    fi
     if $play; then
         sleep 2
         open "$filepath"
