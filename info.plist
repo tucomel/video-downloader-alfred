@@ -1100,6 +1100,8 @@ Video Downloader Alfred workflow is released to the public domain. (Do whatever 
 			<integer>560</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.1</string>
 	<key>webaddress</key>
