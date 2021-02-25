@@ -353,10 +353,14 @@
 				<integer>0</integer>
 				<key>font</key>
 				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
 				<key>largetypetext</key>
 				<string></string>
 				<key>textcolor</key>
 				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.largetype</string>
@@ -456,6 +460,8 @@
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>audio</key>
@@ -518,6 +524,8 @@
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>notification</key>
@@ -653,6 +661,8 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 			<dict>
 				<key>argument</key>
 				<string></string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>size</key>
@@ -671,6 +681,8 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 			<dict>
 				<key>argument</key>
 				<string></string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>ext</key>
@@ -786,10 +798,14 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 				<integer>0</integer>
 				<key>font</key>
 				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
 				<key>largetypetext</key>
 				<string></string>
 				<key>textcolor</key>
 				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.largetype</string>
@@ -823,61 +839,92 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Video Downloader Alfred (workflow)
+	<string>Video Downloader Alfred (Workflow)
+Updated Version of Video Downloader (workflow) Version 1.1 (2021-02-25)
 
-Video Downloader Alfred is an Alfred workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion, Twitch and more... It uses youtube-dl as the core component.
+Video Downloader Alfred is an Alfred workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion and more... It uses youtube-dl as the core component.
 
-Created by Onur Yildirim (onur@cutepilot.com) and updated by Arthur Melo (aomelo@live.com)
-youtube-dl (by Ricardo Garcia Gonzalez, rg3.github.io)
+Installation
+Download and double click video-downloader-alfred.alfredworkflow. It will be imported into Alfred automatically.
 
-Requirements:
-Python version 2.6, 2.7, or 3.3+
-FFmpeg (optional, required for extract-audio feature and compress new sizes)
+Here is a full visual list of what Video Downloader Alfred can do:
 
-Supported sites:
-    • YouTube
-    • Vimeo
-    • Dailymotion
-    • Twitch
-    • MetaCafe
-    • Google Video
-    • MTV
-    • Soundcloud
-    • Photobucket Videos
-    • DepositFiles
-    • blip.tv
-    • myvideo.de
-    • Google Plus
-    • The Daily Show / Colbert Nation
-    • The Escapist
-    • CollegeHumor
-    • arte.tv
-    • xvideos
-    • infoq
-    • mixcloud
-    • Stanford Open Content
-    • Youku
-    • XNXX
-    • more...
+video-downloader-alfred.png
 
-For extract-audio feature, you should install FFmpeg yourself manually (because of licensing issues) and add ffmpeg to your $path.
+Here is how the workflow nodes look like:
+
+video-downloader-alfred-workflow.png
+
+Usage
+vd-update will automatically check and update the core component. Run this first when you import the workflow.
+vd {video-url} without any option will download the best video+audio option from URL merge then and save the video file to your home folder "~".
+vd {video-extension} and/or {video-compression} {video-url} with this option you can choose compression size and extension (any or both) .
+video-downloader-alfred.gif
+
+vd {video-url} hold ⌘ will download the video file, then automatically extract and create an audio file. (.mp3) (The original video file is deleted at the end)
+
+vd {video-url} hold ⌥ will download the video file, then automatic try to play with your default player (VLC, IINA or QT)
+
+video-downloader-alfred-info
+
+vd-info {video-url} will display some video meta-data in Large Type and create an .info.json file.
+vd-help will display a quick help in Large Type.
+Instagram (private or public photos/videos including Reels and IGTV) (optional)
+Nexts steps is only necessarely for private contents download
+Log-in to your instagram account and use GetCookies extension to save your cookie file.
+Put the file inside "$plugin_folder/cookies" (like image below) using the exacly name "instagram.com_cookies.txt" (do not worry, I will not have access to this file, he will be used by youtube-dl at --cookies parameter)
+video-downloader-cookies.png
+
+Audio Extraction (optional)
+For this feature, you should install FFmpeg yourself manually (because of licensing issues).
 
 One way to install FFmpeg is;
 
-1. Install XCode
-2. Install Command Line Tools for Xcode
-3. Install MacPorts (from www.macports.org)
-4. Install FFmpeg by running the command below in
-
-	$ sudo port install ffmpeg
-	$ brew install ffmpeg
-
+Install XCode
+Install Command Line Tools for Xcode
+Install MacPorts
+Install FFmpeg by running the command below in Terminal:
+    $ sudo port install ffmpeg
 You can append these options to enable support for various codecs and FFmpeg features:
 
-+gpl +postproc +lame +theora +libogg +vorbis +xvid +x264 +a52 +faac +faad +dts +nonfree
+    +gpl +postproc +lame +theora +libogg +vorbis +xvid +x264 +a52 +faac +faad +dts +nonfree
+Notes
+Videos, audio and meta-data files will be downloaded/created on your folder "~".
+This workflow will display post notifications where appropriate (before/after downloads, on download errors, updates, etc)...
+Supported Sites
+• YouTube
+• Instagram (private profiles need "cookie file".txt)
+• Vimeo
+• Dailymotion
+• Twitch
+• MetaCafe
+• Google Video
+• MTV
+• Soundcloud
+• Photobucket Videos
+• DepositFiles
+• blip.tv
+• myvideo.de
+• Google Plus
+• The Daily Show / Colbert Nation
+• The Escapist
+• CollegeHumor
+• arte.tv
+• xvideos
+• infoq
+• mixcloud
+• Stanford Open Content
+• Youku
+• XNXX
+• more...
+list here.
 
-FFmpeg is a trademark of Fabrice Bellard and it is licensed under LGPL version 2.1
-http://www.ffmpeg.org/legal.html</string>
+Requirements
+Python version 2.6, 2.7, or 3.3+
+FFmpeg (optional, required for audio extraction feature)
+GetCookies (optional, required for private instagram profiles for example)
+License
+Video Downloader Alfred workflow is released to the public domain. (Do whatever you like with it.) FFmpeg is a trademark of Fabrice Bellard and it is licensed under LGPL version 2.1 http://www.ffmpeg.org/legal.html</string>
 	<key>uidata</key>
 	<dict>
 		<key>0A5D353F-5761-4528-9C3A-748A5951D3C4</key>
@@ -1053,10 +1100,8 @@ http://www.ffmpeg.org/legal.html</string>
 			<integer>560</integer>
 		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>github.com/tucomel</string>
 </dict>
