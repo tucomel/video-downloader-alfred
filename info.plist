@@ -442,7 +442,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -885,7 +885,7 @@ http://www.ffmpeg.org/legal.html</string>
 			<key>xpos</key>
 			<integer>1025</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>835</integer>
 		</dict>
 		<key>0EE74F6E-141E-480F-9607-330FA62FA721</key>
 		<dict>
@@ -943,7 +943,7 @@ http://www.ffmpeg.org/legal.html</string>
 			<key>xpos</key>
 			<integer>625</integer>
 			<key>ypos</key>
-			<integer>870</integer>
+			<integer>835</integer>
 		</dict>
 		<key>6570E17A-DB88-48D8-B3F2-7880B3037772</key>
 		<dict>
@@ -957,7 +957,7 @@ http://www.ffmpeg.org/legal.html</string>
 			<key>xpos</key>
 			<integer>825</integer>
 			<key>ypos</key>
-			<integer>990</integer>
+			<integer>955</integer>
 		</dict>
 		<key>A73B2F73-8230-4689-A4B2-8448CA341704</key>
 		<dict>
@@ -1022,7 +1022,7 @@ http://www.ffmpeg.org/legal.html</string>
 			<key>xpos</key>
 			<integer>1025</integer>
 			<key>ypos</key>
-			<integer>990</integer>
+			<integer>955</integer>
 		</dict>
 		<key>E4936EF0-B129-4E64-9892-FB0A03364BB6</key>
 		<dict>

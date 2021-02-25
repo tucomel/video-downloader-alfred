@@ -23,8 +23,8 @@ source "$CURRENT_DIR"/workflowHandler.sh
 # -------------------------------------
 
 yt="$CURRENT_DIR/bin/youtube-dl"
-download_dir="~"
-output_format=$download_dir/"%(title)s.%(ext)s"
+download_dir="~/youtube-dl/"
+output_format=$download_dir/"%(title)s-%(id)s.%(ext)s"
 ffmpeg_installed=$(program_exists "ffmpeg")
 #ffmpeg_installed=true
 video_url="$1" # "{query}"
@@ -39,6 +39,7 @@ audio_format=""
 # PROGRAM ROUTINE
 # -------------------------------------
 #echo "format = $video_format size = $video_size"
+mkdir -p $download_dir
 if $extract_audio; then
     if $ffmpeg_installed; then
         audio_format="mp3"
