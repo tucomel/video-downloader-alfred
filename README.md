@@ -1,6 +1,6 @@
 ## Video Downloader Alfred (Workflow) ##
 Updated Version of Video Downloader (workflow)
-Version 1.0 (2020-06-25)
+Version 1.1 (2021-02-25)
 
 Video Downloader Alfred is an **[Alfred](http://www.alfredapp.com)** workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion and more... It uses [youtube-dl](http://rg3.github.io/youtube-dl) as the core component.
 
@@ -31,12 +31,40 @@ Here is how the workflow nodes look like:
 * `vd-info {video-url}` will display some video meta-data in Large Type and create an *.info.json* file.
 * `vd-help` will display a quick help in Large Type.
 
+### Instagram (private or public photos/videos including Reels and IGTV) (optional) ###
+#### Nexts steps is only necessarely for private contents download ####
+1. Log-in to your instagram account and use [GetCookies](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid/) extension to save your cookie file.
+1. Put the file inside "$plugin_folder/cookies" (like image below) using the **exacly** name **"instagram.com_cookies.txt"** (do not worry, **I will not have access to this file**, he will be used by **youtube-dl** at *--cookies* parameter)
+
+![video-downloader-cookies.png](video-downloader-cookies.png "video-downloader-cookies")
+
+### Audio Extraction (optional) ###
+For this feature, you should install FFmpeg yourself manually (because of licensing issues).
+
+One way to install FFmpeg is;
+
+1. Install [XCode](https://developer.apple.com/xcode/)
+2. Install [Command Line Tools](https://developer.apple.com/downloads) for Xcode
+3. Install [MacPorts](www.macports.org)
+4. Install FFmpeg by running the command below in Terminal:
+
+```shell
+    $ sudo port install ffmpeg
+```
+
+You can append these options to enable support for various codecs and FFmpeg features:
+
+```shell
+    +gpl +postproc +lame +theora +libogg +vorbis +xvid +x264 +a52 +faac +faad +dts +nonfree
+```
+
 ### Notes ###
 * Videos, audio and meta-data files will be downloaded/created on your folder "\~".
 * This workflow will display post notifications where appropriate (before/after downloads, on download errors, updates, etc)...
 
 ## Supported Sites ##
     • YouTube
+    • Instagram (private profiles need "cookie file".txt)
     • Vimeo
     • Dailymotion
     • Twitch
@@ -65,26 +93,7 @@ Here is how the workflow nodes look like:
 ## Requirements ##
 * [Python](http://www.python.org) version 2.6, 2.7, or 3.3+
 * [FFmpeg](http://www.ffmpeg.org) (optional, required for audio extraction feature)
-
-### Audio Extraction ###
-For this feature, you should install FFmpeg yourself manually (because of licensing issues).
-
-One way to install FFmpeg is;
-
-1. Install [XCode](https://developer.apple.com/xcode/)
-2. Install [Command Line Tools](https://developer.apple.com/downloads) for Xcode
-3. Install [MacPorts](www.macports.org)
-4. Install FFmpeg by running the command below in Terminal:
-
-```shell
-    $ sudo port install ffmpeg
-```
-
-You can append these options to enable support for various codecs and FFmpeg features:
-
-```shell
-    +gpl +postproc +lame +theora +libogg +vorbis +xvid +x264 +a52 +faac +faad +dts +nonfree
-```
+* [GetCookies](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid/) (optional, required for private instagram profiles for example)
 
 ## License ##
 **Video Downloader Alfred** workflow is released to the public domain. (Do whatever you like with it.)
