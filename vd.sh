@@ -24,6 +24,7 @@ source "$CURRENT_DIR"/workflowHandler.sh
 
 yt="$CURRENT_DIR/bin/youtube-dl"
 instagram_cookie="$CURRENT_DIR/cookies/instagram.com_cookies.txt"
+facebook_cookie="$CURRENT_DIR/cookies/facebook.com_cookies.txt"
 download_dir=~/youtube-dl/
 output_format="$download_dir/%(title)s-%(id)s.%(ext)s"
 ffmpeg_installed=$(program_exists "ffmpeg")
@@ -68,9 +69,21 @@ else
     options="$options -f "bestvideo"$video_size""$video_format"+bestaudio"$audio_format"/best"$video_size""$video_format"
 fi
 
-if [ -e $instagram_cookie ]
+if [[ $video_url == *"instagram"* ]]; then
+    cookie=$instagram_cookie
+else
+    if [[ $video_url == *"facebook"* ]]; then
+        cookie=$facebook_cookie
+    fi
+fi
+
+# if [[ $video_url == *"facebook"* ]]; then
+#     cookie=$facebook_cookie
+# fi
+
+if [ -e $cookie ]
 then
-    options="$options --cookies "$instagram_cookie""
+    options="$options --cookies "$cookie""
 fi
 
 #echo $"($yt $options "$video_url")"
