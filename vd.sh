@@ -81,8 +81,7 @@ fi
 #     cookie=$facebook_cookie
 # fi
 
-if [ -e $cookie ]
-then
+if [[ -e $cookie ]]; then
     options="$options --cookies "$cookie""
 fi
 
