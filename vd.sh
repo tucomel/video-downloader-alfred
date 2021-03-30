@@ -72,7 +72,7 @@ fi
 if [[ $video_url == *"instagram"* ]]; then
     cookie=$instagram_cookie
 else
-    if [[ $video_url == *"facebook"* ]]; then
+    if [[ $video_url == *"facebook"* ]] || [[ $video_url == *"fb.watch"* ]]; then
         cookie=$facebook_cookie
     fi
 fi
