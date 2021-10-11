@@ -28,6 +28,7 @@ facebook_cookie="$CURRENT_DIR/cookies/facebook.com_cookies.txt"
 download_dir=~/youtube-dl/
 output_format="$download_dir/%(title)s-%(id)s.%(ext)s"
 ffmpeg_installed=$(program_exists "ffmpeg")
+aria2c_installed=$(program_exists "aria2c")
 #ffmpeg_installed=true
 video_url="$1" # "{query}"
 video_format="$2"
@@ -67,6 +68,9 @@ else
         video_size=""
     fi
     options="$options -f "bestvideo"$video_size""$video_format"+bestaudio"$audio_format"/best"$video_size""$video_format"
+    if $aria2c_installed; then
+        options="$options --external-downloader aria2c"
+    fi
 fi
 
 if [[ $video_url == *"instagram"* ]]; then

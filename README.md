@@ -32,7 +32,7 @@ Here is how the workflow nodes look like:
 * `vd-help` will display a quick help in Large Type.
 
 ### Instagram (private or public photos/videos including Reels and IGTV) (optional) ###
-#### Nexts steps is only necessarely for private contents download ####
+#### Nexts steps is only necessarily for private contents download ####
 1. Log-in to your instagram account and use [GetCookies](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid/) extension to save your cookie file.
 1. Put the file inside "$plugin_folder/cookies" (like image below) using the **exacly** name **"instagram.com_cookies.txt"** (do not worry, **I will not have access to this file**, he will be used by **youtube-dl** at *--cookies* parameter)
 
@@ -41,21 +41,23 @@ Here is how the workflow nodes look like:
 ### Audio Extraction (optional) ###
 For this feature, you should install FFmpeg yourself manually (because of licensing issues).
 
-One way to install FFmpeg is;
+One way to install FFmpeg is:
 
-1. Install [XCode](https://developer.apple.com/xcode/)
-2. Install [Command Line Tools](https://developer.apple.com/downloads) for Xcode
-3. Install [MacPorts](www.macports.org)
-4. Install FFmpeg by running the command below in Terminal:
+1. Install [HomeBrew](https://brew.sh)
+2. Install FFmpeg by running the command below in Terminal:
 
 ```shell
-    $ sudo port install ffmpeg
+    $ brew install ffmpeg
 ```
 
-You can append these options to enable support for various codecs and FFmpeg features:
+You can check [THIS GIST](https://gist.github.com/Piasy/b5dfd5c048eb69d1b91719988c0325d8) options to enable support for various codecs and FFmpeg features:
+
+### aria2c Downloader (optional but strongly recommended) ###
+aria2c is a lightweight library for best use of your network (parallels requests), fixing the problem of very slow downloads (dash playback)
+1. Install [aria2c](https://github.com/aria2/aria2)
 
 ```shell
-    +gpl +postproc +lame +theora +libogg +vorbis +xvid +x264 +a52 +faac +faad +dts +nonfree
+    brew install aria2 (macx86)
 ```
 
 ### Notes ###
@@ -94,6 +96,7 @@ You can append these options to enable support for various codecs and FFmpeg fea
 * [Python](http://www.python.org) version 2.6, 2.7, or 3.3+
 * [FFmpeg](http://www.ffmpeg.org) (optional, required for audio extraction feature)
 * [GetCookies](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid/) (optional, required for private instagram profiles for example)
+* [aria2c](https://github.com/aria2/aria2) (optional, recommended for fast download when downloading dash playback content)
 
 ## License ##
 **Video Downloader Alfred** workflow is released to the public domain. (Do whatever you like with it.)
