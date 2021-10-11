@@ -57,7 +57,7 @@ aria2c is a lightweight library for best use of your network (parallels requests
 1. Install [aria2c](https://github.com/aria2/aria2)
 
 ```shell
-    brew install aria2 (macx86)
+    brew install aria2
 ```
 
 ### Notes ###
