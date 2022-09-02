@@ -22,7 +22,9 @@ source "$CURRENT_DIR"/workflowHandler.sh
 # VARIABLES
 # -------------------------------------
 
-yt="$CURRENT_DIR/bin/youtube-dl"
+#yt="$CURRENT_DIR/bin/youtube-dl"
+#yt="$CURRENT_DIR/bin/yt-dlp"
+yt="yt-dlp"
 instagram_cookie="$CURRENT_DIR/cookies/instagram.com_cookies.txt"
 facebook_cookie="$CURRENT_DIR/cookies/facebook.com_cookies.txt"
 download_dir=~/youtube-dl/
@@ -35,7 +37,7 @@ video_format="$2"
 video_size="$3"
 play=$(contains_str "$4" "-play")
 extract_audio=$(contains_str "$5" "-audio")
-options="-i -q -o "$output_format"" # --restrict-filenames
+options="--restrict-filenames -i -q -o "$output_format" --recode-video mp4 "
 message=""
 audio_format=""
 # -------------------------------------
@@ -67,9 +69,10 @@ else
         else
         video_size=""
     fi
-    options="$options -f "bestvideo"$video_size""$video_format"+bestaudio"$audio_format"/best"$video_size""$video_format"
+    options="$options -f "bv"$video_size""$video_format"+ba"$audio_format"/best" "
+    #options="$options -f "bestvideo"$video_size""$video_format"+bestaudio"$audio_format"/best"$video_size""$video_format"/best""
     if $aria2c_installed; then
-        options="$options --external-downloader aria2c"
+        options="$options --external-downloader aria2c --external-downloader-args "-x 16 -s16 -k 1M" "
     fi
 fi
 
@@ -86,6 +89,7 @@ fi
 # fi
 
 if [[ -e $cookie ]]; then
+    #options="$options --cookies-from-browser vivaldi"
     options="$options --cookies "$cookie""
 fi
 
