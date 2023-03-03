@@ -561,7 +561,7 @@ fi
 if [ -z "$audio" ]; then
 audio=-1
 fi
-#echo $"parameters : ("{query}" $ext $size $play $audio)"
+echo $"parameters : ("{query}" $ext $size $play $audio)"
 sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -587,15 +587,17 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"c88eafeb28ba5d8e2a25a9bed3ca6837df3f7343.png","title":"480p","arg":"480","subtitle":"Compress video to 480p"},{"imagefile":"4a88b4f901461be82ffcf5fa0838ac9f457d8c29.png","title":"720P","arg":"720","subtitle":"Compress video to 720p"}]</string>
+				<string>[{"imagefile":"c88eafeb28ba5d8e2a25a9bed3ca6837df3f7343.png","title":"480p","arg":"480","subtitle":"Compress video to 480p"},{"imagefile":"4a88b4f901461be82ffcf5fa0838ac9f457d8c29.png","title":"720P","arg":"720","subtitle":"Compress video to 720p"},{"imagefile":"0454d424f3f4245d2c5210243b246b814740bb61.png","title":"1080p","arg":"1080","subtitle":"Compress video to 1080p"}]</string>
 				<key>keyword</key>
 				<string>vd</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
 				<string>Select one mode</string>
 				<key>title</key>
-				<string>VideoDownloader</string>
+				<string>Select video size</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -616,9 +618,11 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"d90c9b9e8ff9ff4b7150e64f38e02cb56b5a9a8b.png","title":"Skip","subtitle":"(use source extension)"},{"title":"Mp4","arg":"mp4","subtitle":"Convert to Mp4"},{"title":"GIF","arg":"gif","subtitle":"Save as GIF"}]</string>
+				<string>[{"imagefile":"d90c9b9e8ff9ff4b7150e64f38e02cb56b5a9a8b.png","title":"Skip","subtitle":"(use source extension)"},{"title":"Mp4","arg":"mp4","subtitle":"Convert to Mp4"},{"title":"GIF","arg":"gif","subtitle":"Save as GIF"},{"title":"Mov","subtitle":"Convert to Mov"}]</string>
 				<key>keyword</key>
 				<string>vd</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -930,176 +934,178 @@ Video Downloader Alfred workflow is released to the public domain. (Do whatever 
 		<key>0A5D353F-5761-4528-9C3A-748A5951D3C4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1025</integer>
+			<real>1025</real>
 			<key>ypos</key>
-			<integer>835</integer>
+			<real>835</real>
 		</dict>
 		<key>0EE74F6E-141E-480F-9607-330FA62FA721</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1025</integer>
+			<real>1025</real>
 			<key>ypos</key>
-			<integer>240</integer>
+			<real>240</real>
 		</dict>
 		<key>12E7915C-C435-4191-983F-00949256722A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>625</integer>
+			<real>625</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>24F9353B-47E7-4C13-897A-C2BDE205E29D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<real>430</real>
 			<key>ypos</key>
-			<integer>590</integer>
+			<real>590</real>
 		</dict>
 		<key>28422647-406C-41A0-9213-F8DCF6DAA304</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<real>825</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>2D29886C-4E07-412B-B344-FA2355872056</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<real>80</real>
 			<key>ypos</key>
-			<integer>560</integer>
+			<real>560</real>
 		</dict>
 		<key>3B7A60B0-65BB-4928-9F46-17CB24155CCF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1025</integer>
+			<real>1025</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>57078066-0564-478C-966A-9B981EE7800E</key>
 		<dict>
 			<key>note</key>
 			<string>Download and auto-play video</string>
 			<key>xpos</key>
-			<integer>715</integer>
+			<real>715</real>
 			<key>ypos</key>
-			<integer>515</integer>
+			<real>515</real>
 		</dict>
 		<key>5B439D56-8EA4-4110-9977-01B4EB4D0DDE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>625</integer>
+			<real>625</real>
 			<key>ypos</key>
-			<integer>835</integer>
+			<real>835</real>
 		</dict>
 		<key>6570E17A-DB88-48D8-B3F2-7880B3037772</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1110</integer>
+			<real>1110</real>
 			<key>ypos</key>
-			<integer>645</integer>
+			<real>645</real>
 		</dict>
 		<key>7DDA3FBA-3FC8-4A52-B823-828B6583D78E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<real>825</real>
 			<key>ypos</key>
-			<integer>955</integer>
+			<real>955</real>
 		</dict>
 		<key>A73B2F73-8230-4689-A4B2-8448CA341704</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<real>825</real>
 			<key>ypos</key>
-			<integer>240</integer>
+			<real>240</real>
 		</dict>
 		<key>A7E827A4-C0E8-4FA1-AE11-51807F25A2A1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1025</integer>
+			<real>1025</real>
 			<key>ypos</key>
-			<integer>675</integer>
+			<real>675</real>
 		</dict>
 		<key>B3D9B3B3-67F8-4378-A055-B06E37B83971</key>
 		<dict>
 			<key>note</key>
 			<string>Extract audio from video (delete video after)</string>
 			<key>xpos</key>
-			<integer>715</integer>
+			<real>715</real>
 			<key>ypos</key>
-			<integer>400</integer>
+			<real>400</real>
 		</dict>
 		<key>B538B435-B651-419B-8752-8F9B5D3D1DB4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>285</integer>
+			<real>285</real>
 			<key>ypos</key>
-			<integer>560</integer>
+			<real>560</real>
 		</dict>
 		<key>BF646B06-4EF2-45C9-8D49-8F4FB47E09B3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>855</integer>
+			<real>855</real>
 			<key>ypos</key>
-			<integer>560</integer>
+			<real>560</real>
 		</dict>
 		<key>C677C0FC-8D57-47C9-A418-74D09F8D2453</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1050</integer>
+			<real>1050</real>
 			<key>ypos</key>
-			<integer>500</integer>
+			<real>500</real>
 		</dict>
 		<key>CB30E87E-4DE3-4FC3-AC95-C598FA8989E8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>855</integer>
+			<real>855</real>
 			<key>ypos</key>
-			<integer>415</integer>
+			<real>410</real>
 		</dict>
 		<key>D55D407A-D6DC-4FBE-9B4A-278344FE6B96</key>
 		<dict>
 			<key>xpos</key>
-			<integer>625</integer>
+			<real>625</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>E173526C-76A5-49E2-91E7-D037370C204D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1025</integer>
+			<real>1025</real>
 			<key>ypos</key>
-			<integer>955</integer>
+			<real>955</real>
 		</dict>
 		<key>E4936EF0-B129-4E64-9892-FB0A03364BB6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1025</integer>
+			<real>1025</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>E5987C95-B3AC-4962-82D0-7DCDF7810FE1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>855</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>695</integer>
+			<real>710</real>
 		</dict>
 		<key>E5A4E5B7-73A3-4F22-B470-342A340D2C37</key>
 		<dict>
 			<key>xpos</key>
-			<integer>225</integer>
+			<real>225</real>
 			<key>ypos</key>
-			<integer>590</integer>
+			<real>590</real>
 		</dict>
 		<key>E7CA8965-C7D6-412D-AE3D-172DD7A27ECF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>495</integer>
+			<real>500</real>
 			<key>ypos</key>
-			<integer>560</integer>
+			<real>560</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
