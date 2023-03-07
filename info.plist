@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E7CA8965-C7D6-412D-AE3D-172DD7A27ECF</string>
+				<string>2D29886C-4E07-412B-B344-FA2355872056</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -233,7 +233,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B538B435-B651-419B-8752-8F9B5D3D1DB4</string>
+				<string>E7CA8965-C7D6-412D-AE3D-172DD7A27ECF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -561,7 +561,7 @@ fi
 if [ -z "$audio" ]; then
 audio=-1
 fi
-echo $"parameters : ("{query}" $ext $size $play $audio)"
+#echo $"parameters : ("{query}" $ext $size $play $audio)"
 sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -587,9 +587,7 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"c88eafeb28ba5d8e2a25a9bed3ca6837df3f7343.png","title":"480p","arg":"480","subtitle":"Compress video to 480p"},{"imagefile":"4a88b4f901461be82ffcf5fa0838ac9f457d8c29.png","title":"720P","arg":"720","subtitle":"Compress video to 720p"},{"imagefile":"0454d424f3f4245d2c5210243b246b814740bb61.png","title":"1080p","arg":"1080","subtitle":"Compress video to 1080p"}]</string>
-				<key>keyword</key>
-				<string>vd</string>
+				<string>[{"imagefile":"1cf158467e3af7e0d34b1fc5b0554463477b7f17.png","title":"Skip"},{"imagefile":"c88eafeb28ba5d8e2a25a9bed3ca6837df3f7343.png","title":"480p","arg":"480","subtitle":"Compress video to 480p"},{"imagefile":"4a88b4f901461be82ffcf5fa0838ac9f457d8c29.png","title":"720P","arg":"720","subtitle":"Compress video to 720p"},{"imagefile":"0454d424f3f4245d2c5210243b246b814740bb61.png","title":"1080p","arg":"1080","subtitle":"Compress video to 1080p"}]</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -599,7 +597,7 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>title</key>
 				<string>Select video size</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.listfilter</string>
@@ -618,7 +616,7 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"d90c9b9e8ff9ff4b7150e64f38e02cb56b5a9a8b.png","title":"Skip","subtitle":"(use source extension)"},{"title":"Mp4","arg":"mp4","subtitle":"Convert to Mp4"},{"title":"GIF","arg":"gif","subtitle":"Save as GIF"},{"title":"Mov","subtitle":"Convert to Mov"}]</string>
+				<string>[{"title":"Mp4","arg":"mp4","subtitle":"Convert to Mp4"},{"title":"GIF","arg":"gif","subtitle":"Save as GIF"},{"title":"Mov","subtitle":"Convert to Mov"}]</string>
 				<key>keyword</key>
 				<string>vd</string>
 				<key>matchmode</key>
@@ -955,7 +953,7 @@ Video Downloader Alfred workflow is released to the public domain. (Do whatever 
 		<key>24F9353B-47E7-4C13-897A-C2BDE205E29D</key>
 		<dict>
 			<key>xpos</key>
-			<real>430</real>
+			<real>195</real>
 			<key>ypos</key>
 			<real>590</real>
 		</dict>
@@ -969,7 +967,7 @@ Video Downloader Alfred workflow is released to the public domain. (Do whatever 
 		<key>2D29886C-4E07-412B-B344-FA2355872056</key>
 		<dict>
 			<key>xpos</key>
-			<real>80</real>
+			<real>270</real>
 			<key>ypos</key>
 			<real>560</real>
 		</dict>
@@ -1036,7 +1034,7 @@ Video Downloader Alfred workflow is released to the public domain. (Do whatever 
 		<key>B538B435-B651-419B-8752-8F9B5D3D1DB4</key>
 		<dict>
 			<key>xpos</key>
-			<real>285</real>
+			<real>30</real>
 			<key>ypos</key>
 			<real>560</real>
 		</dict>
@@ -1092,7 +1090,7 @@ Video Downloader Alfred workflow is released to the public domain. (Do whatever 
 		<key>E5A4E5B7-73A3-4F22-B470-342A340D2C37</key>
 		<dict>
 			<key>xpos</key>
-			<real>225</real>
+			<real>425</real>
 			<key>ypos</key>
 			<real>590</real>
 		</dict>

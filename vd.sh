@@ -97,7 +97,7 @@ if [[ -e $cookie ]]; then
     options=""$options" --cookies "$cookie""
 fi
 
-echo "$yt $video_url $options"
+#echo "$yt $video_url $options"
 yt_output="$($yt "$video_url" $options 2>&1)"
 download_result=$?
 
