@@ -28,6 +28,7 @@ yt="yt-dlp"
 instagram_cookie="$CURRENT_DIR/cookies/instagram.com_cookies.txt"
 facebook_cookie="$CURRENT_DIR/cookies/facebook.com_cookies.txt"
 youtube_cookie="$CURRENT_DIR/cookies/youtube.com_cookies.txt"
+twitter_cookie="$CURRENT_DIR/cookies/twitter.com_cookies.txt"
 download_dir=~/youtube-dl/
 output_format="$download_dir%(title)s-%(id)s.%(ext)s"
 ffmpeg_installed=$(program_exists "ffmpeg")
@@ -91,6 +92,9 @@ fi
 if [[ $video_url == *"youtube"* ]] || [[ $video_url == *"youtu.be"* ]]; then
     cookie=$youtube_cookie
 fi
+if [[ $video_url == *"twitter"* ]] || [[ $video_url == *"twitt"* ]]; then
+    cookie=$twitter_cookie
+fi
 
 if [[ -e $cookie ]]; then
     #options="$options --cookies-from-browser vivaldi"
@@ -102,7 +106,12 @@ yt_output="$($yt "$video_url" $options 2>&1)"
 download_result=$?
 
 if [ $download_result -eq 0 ]; then
-    filepath="$($yt -o $output_format --restrict-filenames --get-filename "$video_url")"
+    filepathOpt="--restrict-filenames --get-filename"
+    if [[ -e $cookie ]]; then
+        filepathOpt=""$filepathOpt" --cookies "$cookie""
+    fi
+                                                            
+    filepath="$($yt $filepathOpt "$video_url")"
     if ! [ -f "$filepath" ]; then
         filepath="$(remove_ext "$filepath")".mp4;
     fi
@@ -113,10 +122,10 @@ if [ $download_result -eq 0 ]; then
     fi
     if $play; then
         sleep 2
-        open "$filepath"
+        open "$download_dir/$filepath"
         echo "Now Playing: "$filepath""
     else
-        echo "$filepath"
+        echo "$download_dir/$filepath"
         #echo "Download complete: $filepath"
     fi
 else

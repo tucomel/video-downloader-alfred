@@ -561,7 +561,8 @@ fi
 if [ -z "$audio" ]; then
 audio=-1
 fi
-#echo $"parameters : ("{query}" $ext $size $play $audio)"
+
+#echo "parameters : ("{query}" $ext $size $play $audio)"
 sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -616,7 +617,7 @@ sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"Mp4","arg":"mp4","subtitle":"Convert to Mp4"},{"title":"GIF","arg":"gif","subtitle":"Save as GIF"},{"title":"Mov","subtitle":"Convert to Mov"}]</string>
+				<string>[{"title":"Mp4","arg":"mp4","subtitle":"Convert to Mp4"},{"title":"GIF","arg":"gif","subtitle":"Save as GIF"},{"title":"Mov","arg":"mov","subtitle":"Convert to Mov"}]</string>
 				<key>keyword</key>
 				<string>vd</string>
 				<key>matchmode</key>
