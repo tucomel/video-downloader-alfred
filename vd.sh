@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # Author: Onur Yildirim (onur@cutepilot.com)
 
 # -------------------------------------
@@ -14,7 +14,7 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # create if does not exist
 touch ~/.bash_profile
 
-source ~/.bash_profile
+source ~/.zshrc
 source "$CURRENT_DIR"/shelper.sh
 source "$CURRENT_DIR"/workflowHandler.sh
 
