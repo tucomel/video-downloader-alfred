@@ -52,7 +52,7 @@ mkdir -p $download_dir
 if $extract_audio; then
     if $ffmpeg_installed; then
         audio_format="mp3"
-        options=""$options" --extract-audio --embed-thumbnail --audio-format "$audio_format""
+        options=""$options" --extract-audio --embed-thumbnail --audio-quality 0 --audio-format "$audio_format""
     else
         echo "Failed! Install ffmpeg for audio conversion."
         echo "Type \"vd-help\" for instructions."

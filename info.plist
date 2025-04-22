@@ -562,7 +562,7 @@ if [ -z "$audio" ]; then
 audio=-1
 fi
 
-#echo "parameters : ("{query}" $ext $size $play $audio)"
+echo "parameters : ("{query}" $ext $size $play $audio)"
 sh vd.sh "{query}" $ext $size $play $audio</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
