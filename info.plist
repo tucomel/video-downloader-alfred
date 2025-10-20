@@ -510,7 +510,7 @@
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>Download Complete</string>
+				<string>Download Complete ✅</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -547,29 +547,20 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>127</integer>
 				<key>script</key>
-				<string>if [ -z "$ext" ]; then
-ext=-1
-fi
-if [ -z "$size" ]; then
-size=-1
-fi
-if [ -z "$play" ]; then
-play=-1
-fi
-if [ -z "$audio" ]; then
-audio=-1
-fi
+				<string>: ${ext:=1}
+: ${size:=1}
+: ${play:=1}
+: ${audio:=1}
 
-echo "parameters : ("{query}" $ext $size $play $audio)"
-sh vd.sh "{query}" $ext $size $play $audio</string>
+python3 "$PWD/vd.py" "{query}" $ext $size $play $audio</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>

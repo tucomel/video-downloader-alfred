@@ -28,6 +28,7 @@ aria2_installed  = shutil.which("aria2c") is not None
 
 # ---------- montar opções ----------
 cmd = [yt, video_url, "--restrict-filenames", "-i", "-q", "-o", OUTPUT_FMT]
+vfilter = ""  # sempre inicializado
 
 if extract_aud:
     if not ffmpeg_installed:
@@ -37,15 +38,36 @@ if extract_aud:
     cmd += ["--extract-audio", "--embed-thumbnail", "--audio-quality", "0", "--audio-format", "mp3"]
 else:
     if video_fmt != "-1":
-        cmd += ["--recode-video", video_fmt]
-        vfilter = f"codec:{video_fmt}"
-    else:
-        vfilter = ""
+        if video_fmt.lower() == "mp4":
+            # ---- Lógica MP4 definitiva ----
+            # 1️⃣ tenta H.264 (avc1) nativo
+            # 2️⃣ senão, pega melhor vídeo qualquer e força reencode pra H.264/mp4
+            h = ""
+            if video_size != "-1":
+                h = f"[height<=?{video_size}]"
 
-    if video_size != "-1":
-        vfilter = f"res:{video_size}," + vfilter
+            fmt = (
+                f"bestvideo[ext=mp4][vcodec^=avc1]{h}+bestaudio[ext=m4a]/"
+                f"bestvideo[ext=mp4]{h}+bestaudio[ext=m4a]/"
+                f"bestvideo+bestaudio/best"
+            )
 
-    if vfilter:
+            cmd += [
+                "-f", fmt,
+                "--merge-output-format", "mp4",
+                "--recode-video", "mp4",                 # força conversão final pra H.264
+                "--postprocessor-args", "ffmpeg:-c:v libx264 -c:a aac -movflags +faststart"  # garante H.264 + AAC
+            ]
+
+        else:
+            # outros formatos → mantém comportamento anterior
+            cmd += ["--recode-video", video_fmt]
+            vfilter = f"codec:{video_fmt}"
+    # se video_fmt == -1, só pode haver filtro de resolução
+    if video_size != "-1" and video_fmt.lower() != "mp4":
+        # só aplica sort quando NÃO estamos no caminho especial de mp4
+        prefix = f"res:{video_size}"
+        vfilter = f"{prefix}," + vfilter if vfilter else prefix
         cmd += ["-S", f"{vfilter},br,ext"]
 
     if aria2_installed:
@@ -74,7 +96,6 @@ if cookie:
 proc = subprocess.run(cmd, capture_output=True, text=True)
 if proc.returncode != 0:
     print(f"Download failed -> {proc.returncode}")
-    # repassar stdout/stderr do yt-dlp pro Alfred ver o motivo
     if proc.stdout: print(proc.stdout.strip())
     if proc.stderr: print(proc.stderr.strip())
     sys.exit(proc.returncode)
@@ -86,21 +107,18 @@ if cookie:
 
 name = subprocess.run(get_name_cmd, capture_output=True, text=True).stdout.strip()
 
-# name pode vir completo; se não existir no FS, aplicar fallback/ext
 def remove_ext(p): return os.path.splitext(p)[0]
 
 candidate = name
 if not os.path.isfile(candidate):
-    # fallback padrão .mp4
     candidate = remove_ext(candidate) + ".mp4"
 if extract_aud and ffmpeg_installed:
     candidate = remove_ext(candidate) + ".mp3"
 
-# garantir caminho absoluto dentro do diretório de download
 if not os.path.isabs(candidate):
     candidate = os.path.join(DOWNLOAD_DIR, os.path.basename(candidate))
 
-# ---------- acionar play / imprimir saída para o Alfred ----------
+# ---------- acionar play / imprimir saída ----------
 if play:
     try:
         subprocess.run(["open", candidate], check=False)
